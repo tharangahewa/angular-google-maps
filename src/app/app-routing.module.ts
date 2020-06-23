@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { GoogleMapDemoComponent } from './google-map-demo/google-map-demo.component';
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'demo', component: GoogleMapDemoComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
