@@ -10,10 +10,10 @@ export class GoogleMapDemoComponent implements OnInit {
 
   @ViewChild(MapInfoWindow) infoWindow: MapInfoWindow;
 
-  center = { lat: 24, lng: 12 };
+  center = { lat: 6.835489, lng: 79.869073 };
   markerOptions = { draggable: false };
   markerPositions: google.maps.LatLngLiteral[] = [];
-  zoom = 4;
+  zoom = 14;
   display?: google.maps.LatLngLiteral;
 
   constructor() {
