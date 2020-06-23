@@ -1,4 +1,6 @@
 <google-map
+  [height]="'800px'"
+  [width]="'1200px'"
   [center]="center"
   [zoom]="zoom"
   [options]="">
@@ -11,6 +13,7 @@
 
   <map-info-window>
     <p>{{title}}</p>
+    <div #pano class="pano">No street view found!</div>
   </map-info-window>
 </google-map>
 <button (click)="toggleListings()">Toggle Listings</button>
