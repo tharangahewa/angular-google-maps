@@ -1,0 +1,12 @@
+<google-map
+  [center]="center"
+  [zoom]="zoom"
+  [options]="">
+  <map-marker #marker
+              *ngFor="let m of markers$ | async"
+              [options]=m
+              (mapClick)="openInfoWindow(marker)"></map-marker>
+  <map-info-window>
+    <p>{{title}}</p>
+  </map-info-window>
+</google-map>
