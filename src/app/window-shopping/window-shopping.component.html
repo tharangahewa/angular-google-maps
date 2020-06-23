@@ -2,11 +2,15 @@
   [center]="center"
   [zoom]="zoom"
   [options]="">
-  <map-marker #marker
-              *ngFor="let m of markers$ | async"
-              [options]=m
-              (mapClick)="openInfoWindow(marker)"></map-marker>
+  <ng-container *ngIf="showListings">
+    <map-marker #marker
+                *ngFor="let m of markers$ | async"
+                [options]=m
+                (mapClick)="openInfoWindow(marker)"></map-marker>
+  </ng-container>
+
   <map-info-window>
     <p>{{title}}</p>
   </map-info-window>
 </google-map>
+<button (click)="toggleListings()">Toggle Listings</button>

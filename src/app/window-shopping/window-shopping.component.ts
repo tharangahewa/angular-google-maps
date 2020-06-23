@@ -38,6 +38,7 @@ export class WindowShoppingComponent implements OnInit, AfterViewInit {
   ];
 
   title: string;
+  showListings: boolean;
 
   constructor() {
   }
@@ -74,4 +75,7 @@ export class WindowShoppingComponent implements OnInit, AfterViewInit {
   }
 
 
+  toggleListings() {
+    this.showListings = !this.showListings;
+  }
 }
