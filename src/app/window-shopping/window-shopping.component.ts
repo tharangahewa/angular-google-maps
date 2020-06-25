@@ -66,6 +66,20 @@ export class WindowShoppingComponent implements OnInit, AfterViewInit {
     ));
   }
 
+  /**
+   * Paper Prototype
+   * Usability - Validate
+   * Card Sorting
+   *
+   * Adding facelift to backlog
+   * User group
+   * Schedule meetings july 20th
+   *
+   * Accessbility - Greg, Michecle
+   * Cost  Analysis - Me
+   * Prevelances - Sam
+   */
+
   ngAfterViewInit(): void {
     this.bounds$.subscribe(bounds => this.googleMap.fitBounds(bounds));
   }
