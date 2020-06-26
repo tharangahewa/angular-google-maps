@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { GoogleMapDemoComponent } from './google-map-demo/google-map-demo.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { WindowShoppingComponent } from './window-shopping/window-shopping.component';
+import {FormsModule} from "@angular/forms";
+import { SearchPlacesComponent } from './search-places/search-places.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GoogleMapDemoComponent,
-    WindowShoppingComponent
+    WindowShoppingComponent,
+    SearchPlacesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

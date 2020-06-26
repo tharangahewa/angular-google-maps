@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3 vertical-center">
+      <form>
+        <div class="form-group row justify-content-center">
+          <label for="placesSearchInput" class="lead">Tell us where you are...</label>
+        </div>
+        <div class="form-group row">
+          <div class="col-10">
+          <input #placesSearchInput
+            type="text" class="form-control" id="placesSearchInput" placeholder="Enter City, Area or Address">
+          </div>
+          <div class="col-2">
+            <button
+              (click)="locate()"
+              class="btn btn-outline-dark"><img style="height: 20px;" src="assets/compass-svgrepo-com.svg"></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-9">
+      <div #map id="map"></div>
+  </div>
+</div>
+
+</div>

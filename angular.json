@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-google-maps"
+    }
+  },
+  "defaultProject": "angular-google-maps",
+  "cli": {
+    "analytics": "9997ad29-7fd2-41f3-ba4f-bf58b11cd8a5"
+  }
 }
